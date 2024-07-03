@@ -10,7 +10,7 @@ spec:
         #   secretName: ansible-ee-trigger-secret
         #   secretKey: secretToken
         eventTypes:
-        - '*'
+        - push
     - cel:
         overlays:
         - key: short_sha
