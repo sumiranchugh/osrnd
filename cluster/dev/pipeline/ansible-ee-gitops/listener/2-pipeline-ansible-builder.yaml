@@ -23,7 +23,7 @@ spec:
   - name: FILENAME
     description: name of the execution environment file. defaults to execution-environment.yaml
     type: string
-    default: execution-environment.yaml
+    default: execution-environment.yml
   - description: Name of the container image to be built
     name: NAME
     type: string
