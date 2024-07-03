@@ -6,9 +6,9 @@ spec:
   #serviceAccountName: pipeline
   interceptors:
     - github:
-        secretRef:
-          secretName: ansible-ee-trigger-secret
-          secretKey: secretToken
+        # secretRef:
+        #   secretName: ansible-ee-trigger-secret
+        #   secretKey: secretToken
         eventTypes:
         - push
     - cel:
