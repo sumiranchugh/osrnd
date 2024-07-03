@@ -20,6 +20,10 @@ spec:
     description: The location of the ansible-builder image.
     type: string
     default: registry.redhat.io/ansible-automation-platform-24/ansible-builder-rhel9:latest
+  - name: FILENAME
+    description: name of the execution environment file. defaults to execution-environment.yaml
+    type: string
+    default: execution-environment.yaml
   - description: Name of the container image to be built
     name: NAME
     type: string
@@ -77,6 +81,8 @@ spec:
       params:
       - name: BUILDER_IMAGE
         value: $(params.ANSIBLE_BUILDER_IMAGE)
+      - name: FILENAME
+        value: $(params.FILENAME)
 
     - name: build-image-tag
       taskRef:
